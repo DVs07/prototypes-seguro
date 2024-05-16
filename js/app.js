@@ -36,10 +36,8 @@ Seguro.prototype.cotizarSeguro = function() {
     // console.log(precioCotizado);
     if(this.tipo === 'basico') {
         precioCotizado *= 1.30;
-        // console.log('El precio es', precioCotizado);
     } else {
         precioCotizado *= 1.50;
-        // console.log('El precio es',precioCotizado);
     }
     return precioCotizado;
 }
@@ -110,7 +108,6 @@ UI.prototype.mostrarResultado = ( total, seguro) => {
 
 // Instanciar UI
 const ui = new UI();
-// console.log(ui);
 
 document.addEventListener('DOMContentLoaded', () => {
     ui.llenarOpciones();
@@ -127,11 +124,10 @@ function eventListener() {
 // Funciones
 function cotizarSeguro(e) {
     e.preventDefault();
-    // console.log('Boton cotizar seguro');
 
     // Leer el vehiculo seleccionado
     const vehiculo = document.querySelector('#vehiculo').value;
-    // console.log(vehiculo);
+
     // Leer el año seleccionado
     const year = document.querySelector('#year').value;
 
@@ -139,7 +135,6 @@ function cotizarSeguro(e) {
     const tipo = document.querySelector('input[name="tipo"]:checked').value;
 
     if(vehiculo === '' || year === '' || tipo === '') {
-        // console.log('Todos los campos son obligatorios');
         ui.mostrarAlerta('Todos los campos son obligatorios', 'error');
         return;
     } 
@@ -154,7 +149,6 @@ function cotizarSeguro(e) {
     // Intanciar el seguro
     const seguro = new Seguro(vehiculo, year, tipo);
     const total = seguro.cotizarSeguro();
-    // console.log(seguro);
 
     // Cotizar el seguro
     ui.mostrarResultado(total, seguro);
