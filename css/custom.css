@@ -1,5 +1,5 @@
 body {
-    background: rgb(42, 68, 105);  /* fallback for old browsers */
+    background: rgb(42, 68, 105);  
 }
 .btn.btn-raised.btn-primary {
     background-color: #26C6DA !important;
