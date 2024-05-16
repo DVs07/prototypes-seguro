@@ -1,10 +1,8 @@
 body {
-    background: #e96443;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #904e95, #e96443);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #904e95, #e96443); 
+    background: rgb(42, 68, 105);  /* fallback for old browsers */
 }
 .btn.btn-raised.btn-primary {
-    background-color: #00838F!important;
+    background-color: #26C6DA !important;
     font-size: 16px;
     width: 100%;
     padding: 15px;
@@ -30,7 +28,7 @@ body {
 }
 #contenido {
     margin-top: 60px;
-    background-color: white;
+    background-color: #EBEBEB;
     -webkit-box-shadow: 0px 21px 46px -15px rgba(0,0,0,1);
     -moz-box-shadow: 0px 21px 46px -15px rgba(0,0,0,1);
     box-shadow: 0px 21px 46px -15px rgba(0,0,0,1);
@@ -117,3 +115,50 @@ body {
       -webkit-transform: scaleY(1.0);
     }
   }
+
+  /* DVs07 */
+  .rationale-regular {
+    font-family: "Rationale", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.libre-barcode-128-text-regular {
+    font-family: "Libre Barcode 128 Text", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.anek-tamil-regular {
+font-family: "Anek Tamil", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+font-variation-settings:"wdth" 100;
+}
+.russo-one-regular {
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} 
+.navbar{
+    background-color: #13161a;
+    color: white;
+    height: 45px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.bgc-denim {
+    background-color: #1A63BD !important;
+}
+.bgc-denim:hover {
+    background-color: #0E468C !important;
+}
+.bgc-gunmetal {
+    background-color: #263445 !important;
+}
+footer{
+  background-color: #13161a;
+  color: white;
+  position: fixed;
+  bottom: 0;
+}
