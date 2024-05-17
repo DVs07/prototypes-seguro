@@ -46,10 +46,13 @@ body {
 #resultado  {
     margin-bottom: 40px;
 }
+.mb-10 {
+    margin-bottom: 10px !important;
+}
 #resultado div {
     border: 1px solid #26C6DA;
     text-align: center;
-    padding: 0  0 20px 0;
+    /* padding: 0  0 20px 0; */
 }
 #resultado div p {
     margin-bottom: 0;
@@ -58,7 +61,7 @@ body {
     background-color: #26C6DA;
     margin-bottom: 10px;
     color:white;
-    padding: 10px;
+    padding:  10px 10px 10px 0;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -155,6 +158,12 @@ font-variation-settings:"wdth" 100;
 }
 .bgc-gunmetal {
     background-color: #263445 !important;
+}
+.border-none {
+    border: none !important;
+}
+.border-top{ 
+    border-top: 1px solid #26C6DA!important;
 }
 footer{
   background-color: #13161a;

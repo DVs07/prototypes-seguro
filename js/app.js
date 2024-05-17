@@ -87,10 +87,10 @@ UI.prototype.mostrarResultado = ( total, seguro) => {
 
     div.innerHTML = `
         <p class="header"> Tu Cotización </p>
+        <p class="font-bold"> Seguro: <span class="font-normal capitalize">${seguro.tipo}</span></p>
         <p class="font-bold"> Vehiculo: <span class="font-normal">${seguro.vehiculo}</span> </p>
         <p class="font-bold"> Año: <span class="font-normal">${seguro.year}</span></p>
-        <p class="font-bold"> Tipo: <span class="font-normal capitalize">${seguro.tipo}</span></p>
-        <p class="font-bold"> Precio: <span class="font-normal">$ ${total} </span> </p>
+        <p class="font-bold correcto border-none border-top mt-2"> Precio: <span class="font-normal">$ ${total} </span> </p>
     `;
     const resultadoDiv = document.querySelector('#resultado');
     
@@ -103,6 +103,7 @@ UI.prototype.mostrarResultado = ( total, seguro) => {
         spinner.style.display = 'none';
         resultadoDiv.appendChild(div);
     }, 3000)
+    resultadoDiv.classList.add('mb-10');
 }
 
 
