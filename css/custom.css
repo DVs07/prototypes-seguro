@@ -168,6 +168,7 @@ font-variation-settings:"wdth" 100;
 footer{
   background-color: #13161a;
   color: white;
-  position: fixed;
+  position: relative;
+  margin-top: 72px;
   bottom: 0;
 }
